@@ -25,6 +25,6 @@ class script(object):
 ࿐ /delthumb <a>use this command and delete your old thumbnile.</b>
 ࿐ /viewthumb <a>use this command view your current thumbnile.</b>
 
-✏️ <b><u>HOW TO RENAME A FILE</u></b>
+ <b><u>HOW TO RENAME A FILE</u></b>
 ࿐ <b>send any file and click rename option and type new file name and 
  send select [ document, video, audio ]👈 choice this</b>"""
