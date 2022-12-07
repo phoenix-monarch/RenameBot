@@ -3,14 +3,14 @@ from pyrogram.types import ( InlineKeyboardButton, InlineKeyboardMarkup,ForceRep
 import humanize
 from helper.database import  insert 
 from config import START_PIC
-from Script import script
+
 
 @Client.on_message(filters.private & filters.command(["start"]))
 async def start(client,message):
 	insert(int(message.chat.id))
 	await message.reply_photo(
         photo=START_PIC
-        caption=script.START_TXT.format(message.from_user.first_name),  
+        caption="Hello 👋,{message.from_user.first_name} ☞ I'm A Telegram File & Video Rename Bot With Permanent Thumbnail Support.",  
 	reply_markup=InlineKeyboardMarkup(
 	 [[ InlineKeyboardButton("Support" ,url="https://t.me/Elsasupportgp") ]  ]))
 
