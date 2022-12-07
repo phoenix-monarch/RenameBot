@@ -14,13 +14,13 @@ async def start(client,message):
             caption=script.START_TXT.format(message.from_user.mention),
             reply_to_message_id = message.message_id,  
 	    reply_markup=InlineKeyboardMarkup(
-            [[ InlineKeyboardButton("DEVS ", callback_data='dev')                
+            [[ InlineKeyboardButton("⚔ ᴅᴇᴠs ⚔", callback_data='dev')                
                 ],[
-                InlineKeyboardButton('SUPPORT', url='https://t.me/Elsasupportgp'),
-                InlineKeyboardButton('DONATE', callback_data='donate')
+                InlineKeyboardButton('〄 sᴜᴘᴘᴏʀᴛ 〄', url='https://t.me/Elsasupportgp'),
+                InlineKeyboardButton('〄 ᴅᴏɴᴀᴛᴇ 〄', callback_data='donate')
                 ],[
-                InlineKeyboardButton('ABOUT', callback_data='about'),
-                InlineKeyboardButton('HELP', callback_data='help') ]  ]))
+                InlineKeyboardButton('〄 ᴀʙᴏᴜᴛ 〄', callback_data='about'),
+                InlineKeyboardButton('〄 ʜᴇʟᴘ 〄', callback_data='help') ]  ]))
 
 
 @Client.on_callback_query()
@@ -30,13 +30,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.START_TXT.format(query.message.from_user.mention),
             reply_markup=InlineKeyboardMarkup( [[
-                InlineKeyboardButton("DEVS ", callback_data='dev')                
+                InlineKeyboardButton("⚔ ᴅᴇᴠs ⚔", callback_data='dev')                
                 ],[
-                InlineKeyboardButton('SUPPORT', url='https://t.me/Elsasupportgp'),
-                InlineKeyboardButton('DONATE', callback_data='donate')
+                InlineKeyboardButton('〄 sᴜᴘᴘᴏʀᴛ 〄', url='https://t.me/Elsasupportgp'),
+                InlineKeyboardButton('〄 ᴅᴏɴᴀᴛᴇ 〄', callback_data='donate')
                 ],[
-                InlineKeyboardButton('ABOUT', callback_data='about'),
-                InlineKeyboardButton('HELP', callback_data='help')
+                InlineKeyboardButton('〄 ᴀʙᴏᴜᴛ 〄', callback_data='about'),
+                InlineKeyboardButton('〄 ʜᴇʟᴘ 〄', callback_data='help')
                 ]]
                 )
             )
@@ -44,8 +44,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.HELP_TXT,
             reply_markup=InlineKeyboardMarkup( [[
-               InlineKeyboardButton("CLOSE", callback_data = "close"),
-               InlineKeyboardButton("BACK", callback_data = "start")
+               InlineKeyboardButton("🗑️ᴄʟᴏsᴇ🗑️", callback_data = "close"),
+               InlineKeyboardButton("⌫ʙᴀᴄᴋ☽", callback_data = "start")
                ]]
             )
         )
@@ -53,8 +53,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.DONATE_TXT,
             reply_markup=InlineKeyboardMarkup( [[
-               InlineKeyboardButton("CLOSE", callback_data = "close"),
-               InlineKeyboardButton("BACK", callback_data = "start")
+               InlineKeyboardButton("🗑️ᴄʟᴏsᴇ🗑️", callback_data = "close"),
+               InlineKeyboardButton("⌫ʙᴀᴄᴋ☽", callback_data = "start")
                ]]
             )
         )
@@ -62,8 +62,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(query.message.from_user.mention),
             reply_markup=InlineKeyboardMarkup([[           
-               InlineKeyboardButton("CLOSE", callback_data = "close"),
-               InlineKeyboardButton("BACK", callback_data = "start")
+               InlineKeyboardButton("🗑️ᴄʟᴏsᴇ🗑️", callback_data = "close"),
+               InlineKeyboardButton("⌫ʙᴀᴄᴋ☽", callback_data = "start")
                ]]
             )
         )
@@ -71,8 +71,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.DEV_TXT,
             reply_markup=InlineKeyboardMarkup( [[               
-               InlineKeyboardButton("CLOSE", callback_data = "close"),
-               InlineKeyboardButton("BACK", callback_data = "start")
+               InlineKeyboardButton("🗑️ᴄʟᴏsᴇ🗑️", callback_data = "close"),
+               InlineKeyboardButton("⌫ʙᴀᴄᴋ☽", callback_data = "start")
                ]]
             )
         )
@@ -92,7 +92,7 @@ async def send_doc(client,message):
        filesize = humanize.naturalsize(file.file_size)
        fileid = file.file_id
        await message.reply_text(
-       f"""__What do you want me to do with this file.?__\n\n**File Name** :- `{filename}`\n\n**File Size** :- `{filesize}`"""
+       f"""__Wʜᴀᴛ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴍᴇ ᴛᴏ ᴅᴏ ᴡɪᴛʜ ᴛʜɪs ғɪʟᴇ.?__\n\n**Fɪʟᴇ Nᴀᴍᴇ** :- `{filename}`\n\n**Fɪʟᴇ Sɪᴢᴇ** :- `{filesize}`"""
        ,reply_to_message_id = message.message_id,
-       reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("Rename 📝",callback_data = "rename")
-       ,InlineKeyboardButton("Cancel ❌",callback_data = "cancel")  ]]))
+       reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("✅ ʀᴇɴᴀᴍᴇ ✅",callback_data = "rename")
+       ,InlineKeyboardButton("❌ ᴄᴀɴᴄᴇʟ ❌",callback_data = "cancel")  ]]))
