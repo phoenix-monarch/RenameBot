@@ -12,7 +12,7 @@ async def start(client,message):
         photo=START_PIC
         text="Hello 👋,{message.from_user.first_name} ☞ I'm A Telegram File & Video Rename Bot With Permanent Thumbnail Support.",  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support" ,url="https://t.me/Elsasupportgp") ]  ]))
+	 [[ InlineKeyboardButton("Support" ,url="https://t.me/Elsasupportgp") ]  ])))
 
 
 @Client.on_message(filters.private &( filters.document | filters.audio | filters.video ))
