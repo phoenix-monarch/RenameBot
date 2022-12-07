@@ -29,6 +29,7 @@ async def cb_handler(client, query: CallbackQuery):
     if data == "start":
         await query.message.edit_text(
             text=script.START_TXT.format(message.from_user.first_name),
+            reply_to_message_id = message.message_id,
             reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton("DEVS ", callback_data='dev')                
                 ],[
@@ -42,7 +43,8 @@ async def cb_handler(client, query: CallbackQuery):
             )
     elif data == "help":
         await query.message.edit_text(
-            text=script.HELP_TXT,
+            text=script.HELP_TXT.format(message.from_user.first_name),
+            reply_to_message_id = message.message_id,
             reply_markup=InlineKeyboardMarkup( [[
                InlineKeyboardButton("CLOSE", callback_data = "close"),
                InlineKeyboardButton("BACK", callback_data = "start")
@@ -51,7 +53,8 @@ async def cb_handler(client, query: CallbackQuery):
         )
     elif data == "donate":
         await query.message.edit_text(
-            text=script.DONATE_TXT,
+            text=script.DONATE_TXT.format(message.from_user.first_name),
+            reply_to_message_id = message.message_id,
             reply_markup=InlineKeyboardMarkup( [[
                InlineKeyboardButton("CLOSE", callback_data = "close"),
                InlineKeyboardButton("BACK", callback_data = "start")
@@ -60,7 +63,8 @@ async def cb_handler(client, query: CallbackQuery):
         )
     elif data == "about":
         await query.message.edit_text(
-            text=script.ABOUT_TXT, 
+            text=script.ABOUT_TXT.format(message.from_user.first_name),
+            reply_to_message_id = message.message_id,
             reply_markup=InlineKeyboardMarkup([[           
                InlineKeyboardButton("CLOSE", callback_data = "close"),
                InlineKeyboardButton("BACK", callback_data = "start")
@@ -69,7 +73,8 @@ async def cb_handler(client, query: CallbackQuery):
         )
     elif data == "dev":
         await query.message.edit_text(
-            text=script.DEV_TXT,
+            text=script.DEV_TXT.format(message.from_user.first_name),
+            reply_to_message_id = message.message_id,
             reply_markup=InlineKeyboardMarkup( [[               
                InlineKeyboardButton("CLOSE", callback_data = "close"),
                InlineKeyboardButton("BACK", callback_data = "start")
