@@ -1,8 +1,7 @@
 import pymongo 
 import os
+from config import DB_NAME, DB_URL
 
-DB_NAME = os.environ.get("DB_NAME","")
-DB_URL = os.environ.get("DB_URL","")
 mongo = pymongo.MongoClient(DB_URL)
 db = mongo[DB_NAME]
 dbcol = db["user"]
