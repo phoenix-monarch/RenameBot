@@ -24,12 +24,11 @@ async def start(client,message):
 
 
 @Client.on_callback_query()
-async def cb_handler(client, query: CallbackQuery, message):
+async def cb_handler(client, query: CallbackQuery):
     data = query.data 
     if data == "start":
         await query.message.edit_text(
-            text=script.START_TXT.format(message.from_user.mention),
-            reply_to_message_id = message.message_id,
+            text=script.START_TXT.format(query.from_user.mention),
             reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton("DEVS ", callback_data='dev')                
                 ],[
