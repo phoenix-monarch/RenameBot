@@ -1,14 +1,16 @@
 class script(object):
 
-    START_TXT = """Hello 👋 {} 
-☞ I'm A Telegram File & Video Rename Bot With Permanent Thumbnail Support.
+    START_TXT = """<b>Hello 👋 {} 
+ I'm A Telegram File & Video Rename Bot With Permanent Thumbnail Support.</b>"""
 
-☞ Send Me Any Telegram File/Video! 
 
-☞ Send A Photo To Save As Permanent Thumbnail!
+    DEV_TXT = """ """
 
-☞ Select Your Desired/Required Option! 
 
-☞ Then Wait Till The Process Get Completed!
+    ABOUT_TXT = """ """
 
-☞ Maintained By : @cinemala_com1"""
+    
+    DONATE_TXT = """ """
+
+
+    HELP_TXT = """ """
