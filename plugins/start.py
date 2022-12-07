@@ -17,7 +17,7 @@ async def start(client,message):
 ☞ Send A Photo To Save As Permanent Thumbnail!
 ☞ Select Your Desired/Required Option! 
 ☞ Then Wait Till The Process Get Completed!
-☞ Maintained By : @GreyMatter_Bots
+☞ Maintained By : @cinemala_com1
 	""",reply_to_message_id = message.message_id ,  
 	reply_markup=InlineKeyboardMarkup(
 	 [[ InlineKeyboardButton("Support" ,url="https://t.me/Elsasupportgp") ]  ]))
