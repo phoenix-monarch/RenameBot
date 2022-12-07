@@ -1,5 +1,6 @@
 import math
 import time
+from Script import script
 
 async def progress_for_pyrogram(
     current,
