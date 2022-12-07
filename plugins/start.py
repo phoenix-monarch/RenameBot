@@ -11,7 +11,7 @@ async def start(client,message):
 	insert(int(message.chat.id))
 	await message.reply_photo(
             photo=START_PIC,
-            caption=script.START_TXT.format(message.from_user.first_name),
+            caption=script.START_TXT.format(message.from_user.mention),
             reply_to_message_id = message.message_id,  
 	    reply_markup=InlineKeyboardMarkup(
             [[ InlineKeyboardButton("DEVS ", callback_data='dev')                
@@ -28,7 +28,7 @@ async def cb_handler(client, query: CallbackQuery):
     data = query.data 
     if data == "start":
         await query.message.edit_text(
-            text=script.START_TXT.format(message.from_user.first_name),
+            text=script.START_TXT.format(query.from_user.mention),
             reply_to_message_id = message.message_id,
             reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton("DEVS ", callback_data='dev')                
@@ -61,7 +61,7 @@ async def cb_handler(client, query: CallbackQuery):
         )
     elif data == "about":
         await query.message.edit_text(
-            text=script.ABOUT_TXT,
+            text=script.ABOUT_TXT.format(client.from_user.mention),
             reply_markup=InlineKeyboardMarkup([[           
                InlineKeyboardButton("CLOSE", callback_data = "close"),
                InlineKeyboardButton("BACK", callback_data = "start")
