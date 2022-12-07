@@ -22,8 +22,8 @@ class script(object):
     HELP_TXT = """  <b><u>HOW TO SET THUMBNILE</u></b>
   
 ࿐ /start <b>a bot and send any picture to automatically set thumbnile.</b>
-࿐ /delthumb <a>use this command and delete your old thumbnile.</b>
-࿐ /viewthumb <a>use this command view your current thumbnile.</b>
+࿐ /delthumb <b>use this command and delete your old thumbnile.</b>
+࿐ /viewthumb <b>use this command view your current thumbnile.</b>
 
  <b><u>HOW TO RENAME A FILE</u></b>
 ࿐ <b>send any file and click rename option and type new file name and 
