@@ -1,6 +1,6 @@
 class script(object):
 
-    START_TXT = """<b>Hᴇʟʟᴏ 👋 {} 
+    START_TXT = """<b>Hᴇʟʟᴏ 👋 @{bot.username}
  I'ᴍ A Sɪᴍᴘʟᴇ Tᴇʟᴇɢʀᴀᴍ Fɪʟᴇ & Vɪᴅᴇᴏ Rᴇɴᴀᴍᴇ Bᴏᴛ Wɪᴛʜ Pᴇʀᴍᴀɴᴇɴᴛ Tʜᴜᴍʙɴᴀɪʟ Sᴜᴘᴘᴏʀᴛ.</b>"""
 
 
