@@ -24,7 +24,7 @@ async def start(client,message):
 
 
 @Client.on_callback_query()
-async def cb_handler(client, query: CallbackQuery):
+async def cb_handler(client: Client, query: CallbackQuery):
     data = query.data 
     if data == "start":
         await query.message.edit_text(
@@ -60,7 +60,7 @@ async def cb_handler(client, query: CallbackQuery):
         )
     elif data == "about":
         await query.message.edit_text(
-            text=script.ABOUT_TXT.format(client.query.from_user.mention),
+            text=script.ABOUT_TXT.format(client.from_user.mention),
             reply_markup=InlineKeyboardMarkup([[           
                InlineKeyboardButton("🗑️ᴄʟᴏsᴇ🗑️", callback_data = "close"),
                InlineKeyboardButton("⌫ʙᴀᴄᴋ☽", callback_data = "start")
