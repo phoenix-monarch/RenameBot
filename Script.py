@@ -28,3 +28,17 @@ class script(object):
  <b><u>HOW TO RENAME A FILE</u></b>
 ࿐ <b>send any file and click rename option and type new file name and 
  send select [ document, video, audio ]👈 choice this</b>"""
+
+
+    PRGS_BAR = """\n <b>
+╭•━━━━❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱━➣
+ |
+┣⪼ Total : {1} | {2}
+ |
+┣⪼ Percentage : {0}%
+ |
+┣⪼ Speed : {3}/s
+ |
+┣⪼ Time : {4}
+ |
+╰•━━━━━━━━━━━━━━━➣ </b> """
