@@ -10,7 +10,7 @@ async def start(client,message):
 	insert(int(message.chat.id))
 	await message.reply_photo(
         photo=START_PIC
-        caption="Hello 👋,{message.from_user.first_name} ☞ I'm A Telegram File & Video Rename Bot With Permanent Thumbnail Support.",  
+        text="Hello 👋,{message.from_user.first_name} ☞ I'm A Telegram File & Video Rename Bot With Permanent Thumbnail Support.",  
 	reply_markup=InlineKeyboardMarkup(
 	 [[ InlineKeyboardButton("Support" ,url="https://t.me/Elsasupportgp") ]  ]))
 
