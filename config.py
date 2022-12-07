@@ -12,3 +12,5 @@ class Config(object):
      DB_NAME = os.environ.get("DB_NAME", "my")
      #Your Mongo DB URL Obtained From mongodb.com
      DB_URL = os.environ.get("DB_URL", "")
+     #start pic telegraph link
+     START_PIC = os.environ.get("START_PIC","")
