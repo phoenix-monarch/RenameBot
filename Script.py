@@ -21,7 +21,7 @@ class script(object):
     DONATE_TXT = """<b><i> ഞാൻ നിങ്ങളുടെ കയ്യിൽനിന്നും sᴜᴘᴘᴏʀᴛ മാത്രമേ പ്രതീക്ഷിക്കുന്നുള്ളൂ. @cinemala_com1 എന്ന ചാനലിലുള്ള മൂവീ ഗ്രൂപ്പിൽ ᴊᴏɪɴ ചെയ്യ്ത് sᴜᴘᴘᴏʀᴛ ചെയ്യൂ.😊</i></b> """
 
 
-    HELP_TXT = """  <b><u><i>🎆 HOW TO SET THUMBNAIL 🎆<i/></u></b>
+    HELP_TXT = """<b><u><i>🎆 HOW TO SET THUMBNAIL 🎆</i></u></b>
   
 〄࿐ /start <b>a bot and send any picture to automatically set thumbnile.</b>
 〄࿐ /delthumb <b>use this command and delete your old thumbnile.</b>
