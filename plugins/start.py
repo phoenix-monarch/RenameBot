@@ -17,7 +17,7 @@ async def start(client,message):
             [[ InlineKeyboardButton("DEVS ", callback_data='dev')                
                 ],[
                 InlineKeyboardButton('SUPPORT', url='https://t.me/Elsasupportgp'),
-                InlineKeyboardButton('DONATE', callback='donate')
+                InlineKeyboardButton('DONATE', callback_data='donate')
                 ],[
                 InlineKeyboardButton('ABOUT', callback_data='about'),
                 InlineKeyboardButton('HELP', callback_data='help') ]  ]))
@@ -33,7 +33,7 @@ async def cb_handler(client, query: CallbackQuery):
                 InlineKeyboardButton("DEVS ", callback_data='dev')                
                 ],[
                 InlineKeyboardButton('SUPPORT', url='https://t.me/Elsasupportgp'),
-                InlineKeyboardButton('DONATE', callback='donate')
+                InlineKeyboardButton('DONATE', callback_data='donate')
                 ],[
                 InlineKeyboardButton('ABOUT', callback_data='about'),
                 InlineKeyboardButton('HELP', callback_data='help')
