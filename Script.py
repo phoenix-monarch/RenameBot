@@ -1,44 +1,46 @@
 class script(object):
 
-    START_TXT = """<b>Hello 👋 {} 
- I'm A Telegram File & Video Rename Bot With Permanent Thumbnail Support.</b>"""
+    START_TXT = """<b>Hᴇʟʟᴏ 👋 {} 
+ I'ᴍ A Sɪᴍᴘʟᴇ Tᴇʟᴇɢʀᴀᴍ Fɪʟᴇ & Vɪᴅᴇᴏ Rᴇɴᴀᴍᴇ Bᴏᴛ Wɪᴛʜ Pᴇʀᴍᴀɴᴇɴᴛ Tʜᴜᴍʙɴᴀɪʟ Sᴜᴘᴘᴏʀᴛ.</b>"""
 
 
-    DEV_TXT = """ <a href=https://t.me/Aswin_pm_Bot>『Dᴇᴠɪʟ࿐Tɢ』</a>"""
+    DEV_TXT = """<b> Dᴇᴠᴇʟᴏᴘᴇʀ </b>
+
+<a href=https://t.me/Aswin_pm_Bot>『Dᴇᴠɪʟ࿐Tɢ』</a>"""
 
 
-    ABOUT_TXT = """<b>☯ Name : {}
-☯Owner : <a href=https://t.me/Aswin_pm_Bot>『Dᴇᴠɪʟ࿐Tɢ』</a> 
-☯Library : <a href=https://github.com/pyrogram>Pyrogram</a>
-☯Language : <a href=https://www.python.org>Python 3</a>
-☯Database : <a href=https://cloud.mongodb.com>MongoDB</a>
-☯Server : <a href=https://www.koyeb.com>Koyeb</a>
-☯Build status : v3.5.5 [ BETA ] </b>"""
+    ABOUT_TXT = """<b>🍃 ᴍʏ ɴᴀᴍᴇ : {}
+🍃 ᴅᴇᴠ : <a href=https://t.me/Aswin_pm_Bot>『Dᴇᴠɪʟ࿐Tɢ』</a> 
+🍃 ʟɪʙʀᴀʀʏ : <a href=https://github.com/pyrogram>ᴘʏʀᴏɢʀᴀᴍ</a>
+🍃 ʟᴀɴɢᴜᴀɢᴇ : <a href=https://www.python.org>ᴘʏᴛʜᴏɴ 3</a>
+🍃 ᴅᴀᴛᴀʙᴀsᴇ : <a href=https://cloud.mongodb.com>ᴍᴏɴɢᴏ ᴅʙ</a>
+🍃 sᴇʀᴠᴇʀ : <a href=https://studio.mogenius.com>ᴍᴏɢᴇɴɪᴜs</a>
+🍃 ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ3.5.5 [ ʙᴇᴛᴀ ] </b>"""
 
     
-    DONATE_TXT = """ """
+    DONATE_TXT = """<b><i> ഞാൻ നിങ്ങളുടെ കയ്യിൽനിന്നും sᴜᴘᴘᴏʀᴛ മാത്രമേ പ്രതീക്ഷിക്കുന്നുള്ളൂ. @cinemala_com1 എന്ന ചാനലിലുള്ള മൂവീ ഗ്രൂപ്പിൽ ᴊᴏɪɴ ചെയ്യ്ത് sᴜᴘᴘᴏʀᴛ ചെയ്യൂ.😊</i></b> """
 
 
-    HELP_TXT = """  <b><u>HOW TO SET THUMBNILE</u></b>
+    HELP_TXT = """  <b><u><i>🎆 HOW TO SET THUMBNAIL 🎆<i/></u></b>
   
-࿐ /start <b>a bot and send any picture to automatically set thumbnile.</b>
-࿐ /delthumb <b>use this command and delete your old thumbnile.</b>
-࿐ /viewthumb <b>use this command view your current thumbnile.</b>
+〄࿐ /start <b>a bot and send any picture to automatically set thumbnile.</b>
+〄࿐ /delthumb <b>use this command and delete your old thumbnile.</b>
+〄࿐ /viewthumb <b>use this command view your current thumbnile.</b>
 
- <b><u>HOW TO RENAME A FILE</u></b>
-࿐ <b>send any file and click rename option and type new file name and 
- send select [ document, video, audio ]👈 choice this</b>"""
+ <b><u>📝 HOW TO RENAME A FILE 📝</u></b>
+
+〄࿐ <b>send any file and click rename option and type new file name and send select [ document, video, audio ]👈 choice this</b>"""
 
 
     PRGS_BAR = """\n <b>
-╭•━━━━❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱━➣
+╭•━━━━❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱━〄
+ ┃
+┣➣ 📚 ᴛᴏᴛᴀʟ : {1} | {2}
+ ┃
+┣➣ ♾️ ᴘᴇʀᴄᴇɴᴛᴀɢᴇ : {0}%
+ ┃
+┣➣ 🚀 sᴘᴇᴇᴅ : {3}/s
  |
-┣⪼ Total : {1} | {2}
+┣➣ ⏰ ᴛɪᴍᴇ : {4}
  |
-┣⪼ Percentage : {0}%
- |
-┣⪼ Speed : {3}/s
- |
-┣⪼ Time : {4}
- |
-╰•━━━━━━━━━━━━━━━➣ </b> """
+╰•━━━━━━━━━━━━━━━〄 </b> """
