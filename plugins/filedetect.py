@@ -19,15 +19,15 @@ async def refunc(client,message):
         		await message.reply_to_message.delete()
         		if mime == "video":
         			markup = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("📁 Documents",callback_data = "doc"), 
-        			InlineKeyboardButton("🎥 Video",callback_data = "vid") ]])
+        			InlineKeyboardButton("📂 ᴅocuments",callback_data = "doc"), 
+        			InlineKeyboardButton("🎥 ᴠɪᴅᴇᴏ",callback_data = "vid") ]])
         		elif mime == "audio":
-        			markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📁 Documents",callback_data = "doc")
-        			,InlineKeyboardButton("🎵 audio",callback_data = "aud") ]])
+        			markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📂 ᴅocuments",callback_data = "doc")
+        			,InlineKeyboardButton("🎵 ᴀᴜᴅɪᴏ",callback_data = "aud") ]])
         		else:
-        			markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📁 Documents",callback_data = "doc") ]])
+        			markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📂 ᴅocuments",callback_data = "doc") ]])
         		# dont chenge this message.reply_text     			        		
-        		await message.reply_text(f"**Select the output file type**\n**Output FileName** :- ```{out_filename}```",reply_to_message_id=mg_id,reply_markup = markup)
+        		await message.reply_text(f"**Sᴇʟᴇᴄᴛ ᴛʜᴇ ᴏᴜᴛᴘᴜᴛ ғɪʟᴇ ᴛʏᴘᴇ**\n**Oᴜᴛᴘᴜᴛ FɪʟᴇNᴀᴍᴇ** :- ```{out_filename}```",reply_to_message_id=mg_id,reply_markup = markup)
         		
         	except:
         		try:
@@ -36,19 +36,19 @@ async def refunc(client,message):
         			out_filename= new_name + "."+ out_name
         		except:
         			await message.reply_to_message.delete()
-        			await message.reply_text("**Error** :  No  Extension in File, Not Supporting"
+        			await message.reply_text("**Eʀʀᴏʀ** :  Nᴏ  Exᴛᴇɴsɪᴏɴ ɪɴ Fɪʟᴇ, Nᴏᴛ Sᴜᴘᴘᴏʀᴛɪɴɢ"
         			,reply_to_message_id=mg_id)
         			return
         		await message.reply_to_message.delete()
         		if mime == "video":
-        			markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📁 Documents",callback_data = "doc")
-        			,InlineKeyboardButton("🎥 Video",callback_data = "vid") ]])
+        			markup = InlineKeyboardMarkup([[ InlineKeyboardButton(📂 ᴅocuments",callback_data = "doc")
+        			,InlineKeyboardButton("🎥 ᴠɪᴅᴇᴏ",callback_data = "vid") ]])
         		elif mime == "audio":
-        			markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📁 Documents",callback_data = "doc")
-        			,InlineKeyboardButton("🎵 audio",callback_data = "aud") ]])
+        			markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📂 ᴅocuments",callback_data = "doc")
+        			,InlineKeyboardButton("🎵 ᴀᴜᴅɪᴏ",callback_data = "aud") ]])
         		else:
-        			markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📁 Documents",callback_data = "doc") ]])
+        			markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📂 ᴅocuments",callback_data = "doc") ]])
         		# dont chenge this message.reply_text 
-        		await message.reply_text(f"**Select the output file type**\n**Output FileName** :- ```{out_filename}```",
+        		await message.reply_text(f"**Sᴇʟᴇᴄᴛ ᴛʜᴇ ᴏᴜᴛᴘᴜᴛ ғɪʟᴇ ᴛʏᴘᴇ**\n**Oᴜᴛᴘᴜᴛ FɪʟᴇNᴀᴍᴇ** :- ```{out_filename}```",
         		reply_to_message_id=mg_id,reply_markup = markup)
         		
