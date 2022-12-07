@@ -22,7 +22,7 @@ async def start(client,message):
 ☞ Maintained By : @cinemala_com1
 	""",reply_to_message_id = message.message_id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("HxBots Projects" ,url="https://t.me/HxBots") ]  ]))
+	 [[ InlineKeyboardButton("Support" ,url="https://t.me/Elsasupportgp") ]  ]))
 
 
 @Client.on_message(filters.private &( filters.document | filters.audio | filters.video ))
