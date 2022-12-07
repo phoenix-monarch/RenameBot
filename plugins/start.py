@@ -60,7 +60,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif data == "about":
         await query.message.edit_text(
-            text=script.ABOUT_TXT,
+            text=script.ABOUT_TXT.format(query.message.from_user.mention),
             reply_markup=InlineKeyboardMarkup([[           
                InlineKeyboardButton("🗑️ᴄʟᴏsᴇ🗑️", callback_data = "close"),
                InlineKeyboardButton("⌫ʙᴀᴄᴋ☽", callback_data = "start")
