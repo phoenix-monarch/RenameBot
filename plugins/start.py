@@ -2,25 +2,15 @@ from pyrogram import Client, filters
 from pyrogram.types import ( InlineKeyboardButton, InlineKeyboardMarkup,ForceReply)
 import humanize
 from helper.database import  insert 
+from config import START_PIC
+from Script import script
 
 @Client.on_message(filters.private & filters.command(["start"]))
 async def start(client,message):
 	insert(int(message.chat.id))
-	await message.reply_text(text =f"""
-	Hello 👋 {message.from_user.first_name }
-	
-☞ I'm A Telegram File & Video Rename Bot With Permanent Thumbnail Support.
-
-☞ Send Me Any Telegram File/Video! 
-
-☞ Send A Photo To Save As Permanent Thumbnail!
-
-☞ Select Your Desired/Required Option! 
-
-☞ Then Wait Till The Process Get Completed!
-
-☞ Maintained By : @cinemala_com1
-	""",reply_to_message_id = message.message_id ,  
+	await message.reply_photo(
+        photo=START_PIC
+        caption=script.START_TXT.format(message.from_user.first_name),  
 	reply_markup=InlineKeyboardMarkup(
 	 [[ InlineKeyboardButton("Support" ,url="https://t.me/Elsasupportgp") ]  ]))
 
