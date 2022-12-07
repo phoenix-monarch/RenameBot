@@ -1,7 +1,7 @@
 from pyrogram import Client
 import os
 
-from config import TOKEN, API_HASH, APP_ID
+from config import TOKEN, APP_ID, API_HASH
 
 
 if __name__ == "__main__" :
@@ -10,9 +10,9 @@ if __name__ == "__main__" :
     )
     app = Client(
         "renamer",
-        bot_token=Config.TOKEN,
-        api_id=Config.APP_ID,
-        api_hash=Config.API_HASH,
+        bot_token=TOKEN,
+        api_id=APP_ID,
+        api_hash=API_HASH,
         plugins=plugins
     )
     app.run()
