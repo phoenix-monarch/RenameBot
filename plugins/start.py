@@ -2,8 +2,9 @@ from pyrogram import Client, filters
 from pyrogram.types import ( InlineKeyboardButton, InlineKeyboardMarkup,ForceReply)
 import humanize
 from helper.database import  insert 
-from config import START_PIC
 from Script import script
+
+START_PIC = os.environ. get("START_PIC", "")
 
 @Client.on_message(filters.private & filters.command(["start"]))
 async def start(client,message):
