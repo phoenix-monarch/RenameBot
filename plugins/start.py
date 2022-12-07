@@ -10,9 +10,18 @@ async def start(client,message):
 	insert(int(message.chat.id))
 	await message.reply_photo(
         photo=START_PIC,
-        caption=script.START_TXT.format(message.from_user.first_name),  
+        caption=f"""
+	Hello 👋 {message.from_user.first_name }
+	
+☞ I'm A Telegram File & Video Rename Bot With Permanent Thumbnail Support.
+☞ Send Me Any Telegram File/Video! 
+☞ Send A Photo To Save As Permanent Thumbnail!
+☞ Select Your Desired/Required Option! 
+☞ Then Wait Till The Process Get Completed!
+☞ Maintained By : @GreyMatter_Bots
+	""",reply_to_message_id = message.message_id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support" ,url="https://t.me/Elsasupportgp") ] ]))
+	 [[ InlineKeyboardButton("Support" ,url="https://t.me/Elsasupportgp") ]  ]))
 
 
 @Client.on_message(filters.private &( filters.document | filters.audio | filters.video ))
