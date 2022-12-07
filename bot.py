@@ -1,7 +1,7 @@
 from pyrogram import Client
 import os
 
-from config import Config
+from config import TOKEN, API_HASH, APP_ID
 
 
 if __name__ == "__main__" :
