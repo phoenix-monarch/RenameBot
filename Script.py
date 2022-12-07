@@ -4,10 +4,10 @@ class script(object):
  I'ᴍ A Sɪᴍᴘʟᴇ Tᴇʟᴇɢʀᴀᴍ Fɪʟᴇ & Vɪᴅᴇᴏ Rᴇɴᴀᴍᴇ Bᴏᴛ Wɪᴛʜ Pᴇʀᴍᴀɴᴇɴᴛ Tʜᴜᴍʙɴᴀɪʟ Sᴜᴘᴘᴏʀᴛ.</b>"""
 
 
-    DEV_TXT = """<b> Dᴇᴠᴇʟᴏᴘᴇʀ </b>
+    DEV_TXT = """<b>☬ ᴛʜᴀɴᴋs ᴛᴏ ᴅᴇᴠᴇʟᴏᴘᴇʀs ☬</b>
 
-<a href=https://t.me/Aswin_pm_Bot>『Dᴇᴠɪʟ࿐Tɢ』</a>"""
-
+➥ <a href=https://github.com/Devil-Botz>『Dᴇᴠɪʟ࿐Tɢ』</a>
+➥ <a href=https://github.com/oVo-HxBots>oVo-HxBots</a>"""
 
     ABOUT_TXT = """<b>🍃 ᴍʏ ɴᴀᴍᴇ : {}
 🍃 ᴅᴇᴠ : <a href=https://t.me/Aswin_pm_Bot>『Dᴇᴠɪʟ࿐Tɢ』</a> 
