@@ -75,6 +75,15 @@ def TimeFormatter(milliseconds: int) -> str:
     return tmp[:-2]
 
 
+def convert(seconds):
+    seconds = seconds % (24 * 3600)
+    hour = seconds // 3600
+    seconds %= 3600
+    minutes = seconds // 60
+    seconds %= 60      
+    return "%d:%02d:%02d" % (hour, minutes, seconds)
+
+
 async def not_subscribed(_, client, message):
    if not client.force_channel:
       return False
