@@ -61,7 +61,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif data == "about":
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(query.message.from_user.mention),
-            reply_markup=InlineKeyboardMarkup([[           
+            reply_markup=InlineKeyboardMarkup([[    
+               InlineKeyboardButton("〄 sᴏᴜʀᴄᴇ 〄", url="https://github.com/Devil-Botz/RenameBot") ],[      
                InlineKeyboardButton("🗑️ᴄʟᴏsᴇ🗑️", callback_data = "close"),
                InlineKeyboardButton("⌫ʙᴀᴄᴋ☽", callback_data = "start")
                ]]
