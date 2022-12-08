@@ -1,3 +1,5 @@
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00F700&width=435&lines=%E2%98%9E+I'm+A+Telegram+File+%26+Video+Rename+Bot+With+Permanent+Thumbnail+Support.++)](https://git.io/typing-svg)
+
 <p align="center">
   <img src="https://telegra.ph/file/0e3738d56ff92e363a1d9.jpg" alt="Rename Bot">
 </p>
