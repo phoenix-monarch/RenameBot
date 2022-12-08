@@ -6,8 +6,8 @@
         "Mongo DB", 
         "Telegram Bot"
     ],
-    "repository": "https://github.com/oVo-HxBots/RENAME-PRO",
-    "success_url": "https://t.me/HxBots",
+    "repository": "https://github.com/Devil-Botz/RenameBot",
+    "success_url": "https://t.me/Elsasupportgp",
     "env": {
         "APP_ID": {
             "description": "Your APP ID From my.telegram.org ",
@@ -22,7 +22,7 @@
             "value": ""
         },
         "ADMIN": {
-            "description":"754495556"
+            "description":""
         },
         "DB_URL": {
             "description": "Your Mongo DB URL Obtained From mongodb.com",
@@ -32,6 +32,10 @@
                "description":"Your Mongo DB Database Name ",
                 "value": "my",
                 "required": false
+        },
+        "START_IMG":{
+                "description":"Telegraph link",
+                "value":""
         }
     },
     "buildpacks": [
