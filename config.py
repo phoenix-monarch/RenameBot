@@ -13,3 +13,4 @@ class Config(object):
      #Your Mongo DB URL Obtained From mongodb.com
      DB_URL = os.environ.get("DB_URL", "")
      START_PIC = os.environ.get("START_PIC", "")
+     PORT = os.environ.get("PORT", "8080")
