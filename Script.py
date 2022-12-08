@@ -4,11 +4,11 @@ class script(object):
  I'ᴍ A Sɪᴍᴘʟᴇ Tᴇʟᴇɢʀᴀᴍ Fɪʟᴇ & Vɪᴅᴇᴏ Rᴇɴᴀᴍᴇ Bᴏᴛ Wɪᴛʜ Pᴇʀᴍᴀɴᴇɴᴛ Tʜᴜᴍʙɴᴀɪʟ Sᴜᴘᴘᴏʀᴛ.</b>"""
 
 
-    DEV_TXT = """<b>☬ ᴛʜᴀɴᴋs ᴛᴏ ᴅᴇᴠᴇʟᴏᴘᴇʀs
+    DEV_TXT = """<b>☬ ᴛʜᴀɴᴋs ᴛᴏ ᴅᴇᴠᴇʟᴏᴘᴇʀs ☬
 
 ➥ <a href=https://github.com/Devil-Botz>『Dᴇᴠɪʟ࿐Tɢ』</a>
-➥ <a href=https://github.com/Joelkb> Jᴏᴇʟ ᠰ TɢX</a>
-➥ <a href=https://github.com/oVo-HxBots> oVo-HxBots</a></b>"""
+➥ <a href=https://github.com/Joelkb>  Jᴏᴇʟ ᠰ TɢX</a>
+➥ <a href=https://github.com/oVo-HxBots>  oVo-HxBots</a></b>"""
 
     ABOUT_TXT = """<b>🍃 ᴍʏ ɴᴀᴍᴇ : {}
 🍃 ᴅᴇᴠ : <a href=https://t.me/Aswin_pm_Bot>『Dᴇᴠɪʟ࿐Tɢ』</a> 
@@ -56,3 +56,5 @@ class script(object):
     TT_DOWN = """𝐓𝐫𝐲𝐢𝐧𝐠 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝..."""
 
     PLZ_ETR_NFIL = """𝐏𝐥𝐞𝐚𝐬𝐞 𝐞𝐧𝐭𝐞𝐫 𝐭𝐡𝐞 𝐧𝐞𝐰 𝐟𝐢𝐥𝐞𝐧𝐚𝐦𝐞..."""
+
+    FSUB_MSG = """𝐒𝐎𝐑𝐑𝐘 𝐁𝐑𝐎 𝐘𝐎𝐔 𝐀𝐑𝐄 𝐍𝐎𝐓 𝐉𝐎𝐈𝐍𝐄𝐃 𝐌𝐘 𝐔𝐏𝐃𝐀𝐓𝐄 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 . 𝐏𝐋𝐄𝐀𝐒𝐄  𝐉𝐎𝐈𝐍 𝐀𝐍𝐃 𝐔𝐒𝐄 𝐓𝐇𝐈𝐒 𝐁𝐎𝐓"""
