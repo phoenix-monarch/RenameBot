@@ -19,8 +19,8 @@ if __name__ == "__main__" :
         plugins=plugins
     )
     app = web.AppRunner(await web_server())
-        await app.setup()
-        bind_address = "0.0.0.0"
-        await web.TCPSite(app, bind_address, PORT).start()
+    await app.setup()
+    bind_address = "0.0.0.0"
+    await web.TCPSite(app, bind_address, PORT).start()
 
     app.run()
