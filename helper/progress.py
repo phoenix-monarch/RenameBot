@@ -1,6 +1,8 @@
 import math
 import time
 from Script import script
+from pyrogram.errors import UserNotParticipant
+from pyrogram import enums
 
 async def progress_for_pyrogram(
     current,
@@ -71,3 +73,16 @@ def TimeFormatter(milliseconds: int) -> str:
         ((str(seconds) + "s, ") if seconds else "") + \
         ((str(milliseconds) + "ms, ") if milliseconds else "")
     return tmp[:-2]
+
+
+async def not_subscribed(_, client, message):
+   if not client.force_channel:
+      return False
+   try:             
+      user = await client.get_chat_member(client.force_channel, message.from_user.id)
+   except UserNotParticipant:
+      pass
+   else:
+      if user.status != enums.ChatMemberStatus.BANNED:                       
+         return False 
+   return True
