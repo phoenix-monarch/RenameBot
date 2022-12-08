@@ -14,6 +14,10 @@ logging.getLogger("pyrogram").setLevel(logging.ERROR)
 FORCE_SUB = os.environ.get("FORCE_SUB", "")
 PORT = os.environ.get("PORT", "8080")
 
+    if __name__ == "__main__" :
+    plugins = dict(
+        root="plugins"
+    )
 
 class Bot(Client):
 
@@ -24,7 +28,7 @@ class Bot(Client):
             api_id=Config.APP_ID,
             api_hash=Config.API_HASH,
             workers=50,
-            plugins={"root": "plugins"},
+            plugins=plugins,
             sleep_threshold=5,
         )
 
