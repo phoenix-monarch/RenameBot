@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://telegra.ph/file/0e3738d56ff92e363a1d9.jpg" alt="Rename Bot">
+</p>
 # RENAME BOT
 
 # NOTE [READ THIS]
@@ -38,6 +41,8 @@ A File Rename Bot with Custom Thumbnail Support
 * DATABASE_NAME  - Your database name from mongoDB. Default will be 'my'
 
 * DATABASE_URI  - Mongo Database URL from https://cloud.mongodb.com/
+
+* START_IMG - Telegraph link [Eg:- https://telegra.ph/file/0e3738d56ff92e363a1d9.jpg]
 
 # HOW TO FILL -
 
