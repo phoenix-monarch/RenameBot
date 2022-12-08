@@ -3,6 +3,9 @@ import os
 
 from config import Config
 
+from aiohttp import web
+from plugins import web_server
+
 
 if __name__ == "__main__" :
     plugins = dict(
