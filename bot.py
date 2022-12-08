@@ -11,6 +11,9 @@ logging.config.fileConfig('logging.conf')
 logging.getLogger().setLevel(logging.INFO)
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
 
+FORCE_SUB = os.environ.get("FORCE_SUB", "")
+PORT = os.environ.get("PORT", "8080")
+
 
 class Bot(Client):
 
