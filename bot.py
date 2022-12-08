@@ -6,7 +6,7 @@ import os
 from config import Config
 
 from aiohttp import web
-from plugins import web_server
+from plugins.web import web_server
 logging.config.fileConfig('logging.conf')
 logging.getLogger().setLevel(logging.INFO)
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
