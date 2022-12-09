@@ -92,7 +92,7 @@ async def doc(bot,update):
 		    thumb=ph_path,
 		    duration=duration,
 		    progress=progress_for_pyrogram,
-		    progress_args=( "script.TT_DOWN",  ms, c_time))
+		    progress_args=(script.TT_DOWN,  ms, c_time))
         elif type == "audio": 
             await bot.send_audio(
 		    update.message.chat.id,
@@ -101,7 +101,7 @@ async def doc(bot,update):
 		    thumb=ph_path,
 		    duration=duration,
 		    progress=progress_for_pyrogram,
-		    progress_args=( "script.TT_DOWN",  ms, c_time   )) 
+		    progress_args=(script.TT_DOWN,  ms, c_time   )) 
      except Exception as e: 
          await ms.edit(f" Erro {e}") 
          os.remove(file_path)
