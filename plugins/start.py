@@ -26,7 +26,7 @@ async def start(client, message):
                 ]]
                 )
     if START_PIC:
-        await message.reply_photo(photo=random.choice(START_PIC), caption=txt, reply_markup=button)       
+        await message.reply_photo(random.choice(START_PIC), caption=txt, reply_markup=button)       
     else:
         await message.reply_text(text=txt, reply_markup=button, disable_web_page_preview=True)
 
@@ -36,7 +36,7 @@ async def cb_handler(client, query: CallbackQuery):
     data = query.data 
     if data == "start":
         await query.message.edit_text(
-            text=script.START_TXT.format(query.from_user.mention),
+            txt=script.START_TXT.format(query.from_user.mention),
             reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton("⚔ ᴅᴇᴠs ⚔", callback_data='dev')                
                 ],[
