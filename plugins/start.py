@@ -13,11 +13,11 @@ from config import START_PIC, FLOOD, ADMIN
 async def start(client, message):
     user = message.from_user
     if not await db.is_user_exist(user.id):
-    await db.add_user(user.id)             
-    await message reply_photo(
-        photo=random.choice(START_PIC),
-        caption=script.START_TXT.format(message.from_user.mention),
-        reply_markup=InlineKeyboardMarkup( [[
+       await db.add_user(user.id)             
+       await message reply_photo(
+           photo=random.choice(START_PIC),
+           caption=script.START_TXT.format(message.from_user.mention),
+           reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton("⚔ ᴅᴇᴠs ⚔", callback_data='dev')                
                 ],[
                 InlineKeyboardButton('〄 sᴜᴘᴘᴏʀᴛ 〄', url='https://t.me/Elsasupportgp'),
