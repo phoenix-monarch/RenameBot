@@ -1,34 +1,25 @@
 import logging
 import logging.config
-from pyrogram import Client
-import os
-
-from config import Config
-
+from pyrogram import Client 
+from config import APP_ID, API_HASH, TOKEN, FORCE_SUB, PORT
 from aiohttp import web
 from plugins.web import web_server
+
 logging.config.fileConfig('logging.conf')
 logging.getLogger().setLevel(logging.INFO)
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
 
-FORCE_SUB = os.environ.get("FORCE_SUB", "")
-PORT = os.environ.get("PORT", "8080")
-
-    if __name__ == "__main__" :
-    plugins = dict(
-        root="plugins"
-    )
 
 class Bot(Client):
 
     def __init__(self):
         super().__init__(
             name="renamer",
-            bot_token=Config.TOKEN,
-            api_id=Config.APP_ID,
-            api_hash=Config.API_HASH,
+            api_id=API_ID,
+            api_hash=API_HASH,
+            bot_token=BOT_TOKEN,
             workers=50,
-            plugins=plugins,
+            plugins={"root": "plugins"},
             sleep_threshold=5,
         )
 
@@ -50,12 +41,12 @@ class Bot(Client):
        await app.setup()
        bind_address = "0.0.0.0"
        await web.TCPSite(app, bind_address, PORT).start()
-       logging.info(f"{me.first_name} Started 👿👿👿")
+       logging.info(f"{me.first_name} STARTED 👿👿👿")
       
 
     async def stop(self, *args):
       await super().stop()      
       logging.info("Bot Stopped")
         
-app = Bot()
-app.run()
+bot = Bot()
+bot.run()
