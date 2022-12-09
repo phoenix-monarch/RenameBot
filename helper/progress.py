@@ -1,16 +1,11 @@
 import math
-import time
-from Script import script
+import time 
 from pyrogram.errors import UserNotParticipant
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram import enums
+from Script import script
 
-async def progress_for_pyrogram(
-    current,
-    total,
-    ud_type,
-    message,
-    start
-):
+async def progress_for_pyrogram(current, total, ud_type, message, start):
 
     now = time.time()
     diff = now - start
@@ -27,7 +22,7 @@ async def progress_for_pyrogram(
 
         progress = "{0}{1}".format(
             ''.join(["█" for i in range(math.floor(percentage / 5))]),
-            ''.join(["▒" for i in range(20 - math.floor(percentage / 5))]))
+            ''.join(["░" for i in range(20 - math.floor(percentage / 5))]))
             
         tmp = progress + script.PRGS_BAR.format( 
             round(percentage, 2),
@@ -39,14 +34,14 @@ async def progress_for_pyrogram(
         )
         try:
             await message.edit(
-                text="{}\n {}".format(
-                    ud_type,
-                    tmp
+                text="{}\n\n{}".format(ud_type, tmp),               
+                reply_markup=InlineKeyboardMarkup( [[
+                    InlineKeyboardButton("❌ ᴄᴀɴᴄᴇʟ ❌", callback_data="cancel")
+                    ]]
                 )
             )
         except:
             pass
-
 
 def humanbytes(size):
     # https://stackoverflow.com/a/49361727/4723940
@@ -55,12 +50,11 @@ def humanbytes(size):
         return ""
     power = 2**10
     n = 0
-    Dic_powerN = {0: ' ', 1: 'Ki', 2: 'Mi', 3: 'Gi', 4: 'Ti'}
+    Dic_powerN = {0: ' ', 1: 'K', 2: 'M', 3: 'G', 4: 'T'}
     while size > power:
         size /= power
         n += 1
     return str(round(size, 2)) + " " + Dic_powerN[n] + 'B'
-
 
 def TimeFormatter(milliseconds: int) -> str:
     seconds, milliseconds = divmod(int(milliseconds), 1000)
@@ -72,8 +66,7 @@ def TimeFormatter(milliseconds: int) -> str:
         ((str(minutes) + "m, ") if minutes else "") + \
         ((str(seconds) + "s, ") if seconds else "") + \
         ((str(milliseconds) + "ms, ") if milliseconds else "")
-    return tmp[:-2]
-
+    return tmp[:-2] 
 
 def convert(seconds):
     seconds = seconds % (24 * 3600)
@@ -82,7 +75,6 @@ def convert(seconds):
     minutes = seconds // 60
     seconds %= 60      
     return "%d:%02d:%02d" % (hour, minutes, seconds)
-
 
 async def not_subscribed(_, client, message):
    if not client.force_channel:
