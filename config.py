@@ -1,7 +1,7 @@
 import os
 import re
 
-
+     id_pattern = re.compile(r'^.\d+$')
      # get a token from @BotFather
      TOKEN = os.environ.get("TOKEN", "")
      # The Telegram API things
@@ -13,7 +13,11 @@ import re
      DB_NAME = os.environ.get("DB_NAME", "my")
      #Your Mongo DB URL Obtained From mongodb.com
      DB_URL = os.environ.get("DB_URL", "")
+
      START_PIC = os.environ.get("START_PIC", "")
+
      PORT = os.environ.get("PORT", "8080")
+
      FORCE_SUB = os.environ.get("FORCE_SUB", "")
+
      FLOOD = int(os.environ.get("FLOOD", "5"))
