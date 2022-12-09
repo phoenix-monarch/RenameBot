@@ -25,7 +25,7 @@ async def start(client, message):
                 InlineKeyboardButton('〄 ʜᴇʟᴘ 〄', callback_data='help')
                 ]])
     if START_PIC:
-        await message.reply_photo(START_PIC, caption=txt, reply_markup=button)       
+        await message.reply_photo(START_PIC, caption=script.START_TXT, reply_markup=button)       
     else:
         await message.reply_text(text=script.START_TXT, reply_markup=button, disable_web_page_preview=True)
 
