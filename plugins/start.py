@@ -14,7 +14,7 @@ async def start(client, message):
     user = message.from_user
     if not await db.is_user_exist(user.id):
         await db.add_user(user.id)             
-    text=script.START_TXT.format(message.from_user.mention),
+    text=script.START_TXT.format(user.mention),
     button=InlineKeyboardMarkup([[
                 InlineKeyboardButton("⚔ ᴅᴇᴠs ⚔", callback_data='dev')                
                 ],[
@@ -25,9 +25,9 @@ async def start(client, message):
                 InlineKeyboardButton('〄 ʜᴇʟᴘ 〄', callback_data='help')
                 ]])
     if START_PIC:
-        await message.reply_photo(START_PIC, caption=script.START_TXT, reply_markup=button)       
+        await message.reply_photo(START_PIC, caption=script.START_TXT.format(user.mention), reply_markup=button)       
     else:
-        await message.reply_text(text=script.START_TXT, reply_markup=button, disable_web_page_preview=True)
+        await message.reply_text(text=script.START_TXT.format(user.mention), reply_markup=button, disable_web_page_preview=True)
 
 @Client.on_callback_query()
 async def cb_handler(client, query: CallbackQuery):
