@@ -1,7 +1,6 @@
 import motor.motor_asyncio
 from config import DB_URL, DB_NAME
 
-db = Database(DB_URL, DB_NAME)
 class Database:
 
     def __init__(self, uri, database_name):
@@ -49,4 +48,4 @@ class Database:
         user = await self.col.find_one({'_id': int(id)})
         return user.get('caption', None)
 
-
+db = Database(DB_URL, DB_NAME)
