@@ -14,8 +14,10 @@ async def start(client, message):
     user = message.from_user
     if not await db.is_user_exist(user.id):
     await db.add_user(user.id)             
-    text=script.START_TXT.format(message.from_user.mention),
-    button=InlineKeyboardMarkup( [[
+    await message reply_photo(
+        photo=random.choice(START_PIC),
+        caption=script.START_TXT.format(message.from_user.mention),
+        reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton("⚔ ᴅᴇᴠs ⚔", callback_data='dev')                
                 ],[
                 InlineKeyboardButton('〄 sᴜᴘᴘᴏʀᴛ 〄', url='https://t.me/Elsasupportgp'),
@@ -26,11 +28,6 @@ async def start(client, message):
                 ]]
                 )
             )
-    if START_PIC:
-        await message.reply_photo(START_PIC, caption=script.START_TXT.format(message.from_user.mention), reply_markup=button)       
-    else:
-        await message.reply_text(text=script.START_TXT.format(message.from_user.mention), reply_markup=button, disable_web_page_preview=True)   
-
 
     
 @Client.on_callback_query()
@@ -103,6 +100,7 @@ async def log_file(client, message):
         await message.reply_document('TelegramBot.log')
     except Exception as e:
         await message.reply_text(f"Error:\n`{e}`")
+
 
 @Client.on_message(filters.private & (filters.document | filters.audio | filters.video))
 async def rename_start(client, message):
