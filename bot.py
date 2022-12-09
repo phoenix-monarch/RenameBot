@@ -5,6 +5,7 @@ from config import APP_ID, API_HASH, TOKEN, FORCE_SUB, PORT
 from aiohttp import web
 from plugins.web import web_server
 
+
 logging.config.fileConfig('logging.conf')
 logging.getLogger().setLevel(logging.INFO)
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
