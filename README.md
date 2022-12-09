@@ -47,6 +47,8 @@ A File Rename Bot with Custom Thumbnail Support
 
 * START_IMG - Telegraph link [Eg:- https://telegra.ph/file/0e3738d56ff92e363a1d9.jpg]
 
+* FORCE_SUB - Channel ID
+
 # HOW TO FILL -
 
 EXAMPLE - mongodb+srv://[UserName]:[password]@cluster0.dciqs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
@@ -58,7 +60,8 @@ EXAMPLE - mongodb+srv://[UserName]:[password]@cluster0.dciqs.mongodb.net/myFirst
 ### Deploy to Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?)
 
-
+## Deploy to Koyeb
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?)
 
 ## Bot Commands
 > Check Bot Status
@@ -69,8 +72,14 @@ EXAMPLE - mongodb+srv://[UserName]:[password]@cluster0.dciqs.mongodb.net/myFirst
 * `/delthumb` Delete Thumbnail
 > Broadcast Message
 * `/broadcast` 'your message'
-
-
+> Set custom caption
+* `/set_caption` `Set custom caption`
+> See caption
+* '/see_caption''See caption'
+> Delete caption
+* '/del_caption''Delete caption'
+> Total users
+* '/users' `Total users`
 
 ## Follow Me🔥:
 
@@ -88,3 +97,6 @@ EXAMPLE - mongodb+srv://[UserName]:[password]@cluster0.dciqs.mongodb.net/myFirst
 <p align="left">
 <a href="https://t.me/Elsasupportgp"><img src="https://img.shields.io/badge/Support-red?style=for-the-badge&logo=telegram"></a>
 </p>
+
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs?username=RenameBot&show_icons=true&locale=en&layout=compact&theme=chartreuse-dark" alt="ovi" />
