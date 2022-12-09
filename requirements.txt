@@ -6,3 +6,5 @@ TgCrypto
 pymongo
 dnspython
 aiohttp
+motor
+aiofiles
