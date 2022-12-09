@@ -11,12 +11,11 @@ from config import START_PIC, FLOOD, ADMIN
 
 @Client.on_message(filters.private & filters.command(["start"]))
 async def start(client, message):    
+    user = message.from_user
     if not await db.is_user_exist(user.id):
-       await db.add_user(user.id)         
-       await message.reply_photo(
-            photo=random.choice(START_PIC),
-            caption=script.START_TXT.format(message.from_user.mention),
-            reply_markup=InlineKeyboardMarkup( [[
+        await db.add_user(user.id)             
+    txt=script.START_TXT.format(message.from_user.mention),
+    button=InlineKeyboardMarkup( [[
                 InlineKeyboardButton("⚔ ᴅᴇᴠs ⚔", callback_data='dev')                
                 ],[
                 InlineKeyboardButton('〄 sᴜᴘᴘᴏʀᴛ 〄', url='https://t.me/Elsasupportgp'),
@@ -26,7 +25,10 @@ async def start(client, message):
                 InlineKeyboardButton('〄 ʜᴇʟᴘ 〄', callback_data='help')
                 ]]
                 )
-            )
+    if START_PIC:
+        await message.reply_photo(photo=random.choice(START_PIC), caption=txt, reply_markup=button)       
+    else:
+        await message.reply_text(text=txt, reply_markup=button, disable_web_page_preview=True)
 
     
 @Client.on_callback_query()
@@ -91,6 +93,7 @@ async def cb_handler(client, query: CallbackQuery):
             await query.message.reply_to_message.delete()
         except:
             await query.message.delete()
+
 
 
 @Client.on_message(filters.command('logs') & filters.user(ADMIN))
