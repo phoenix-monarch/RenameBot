@@ -33,6 +33,11 @@
                 "value": "my",
                 "required": false
         },
+        "FORCE_SUB":{ 
+               "description":"Channel ID ",
+                "value": "",
+                
+        },
         "START_IMG":{
                 "description":"Telegraph link",
                 "value":""
