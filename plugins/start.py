@@ -34,7 +34,7 @@ async def cb_handler(client, query: CallbackQuery):
     data = query.data 
     if data == "start":
         await query.message.edit_text(
-            text=script.START_TXT.format(query.from_user.mention),,
+            text=script.START_TXT.format(query.from_user.mention),
             reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton("⚔ ᴅᴇᴠs ⚔", callback_data='dev')                
                 ],[
