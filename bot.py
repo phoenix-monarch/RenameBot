@@ -17,7 +17,7 @@ class Bot(Client):
             name="renamer",
             api_id=APP_ID,
             api_hash=API_HASH,
-            bot_token=BOT_TOKEN,
+            bot_token=TOKEN,
             workers=50,
             plugins={"root": "plugins"},
             sleep_threshold=5,
