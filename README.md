@@ -71,15 +71,15 @@ EXAMPLE - mongodb+srv://[UserName]:[password]@cluster0.dciqs.mongodb.net/myFirst
 > Delete Thumbnail
 * `/delthumb` Delete Thumbnail
 > Broadcast Message
-* `/broadcast` 'your message'
+* `/broadcast` `your message`
 > Set custom caption
 * `/set_caption` `Set custom caption`
 > See caption
-* '/see_caption''See caption'
+* `/see_caption``See caption`
 > Delete caption
-* '/del_caption''Delete caption'
+* `/del_caption``Delete caption`
 > Total users
-* '/users' `Total users`
+* `/users` `Total users`
 
 ## Follow Me🔥:
 
@@ -99,4 +99,4 @@ EXAMPLE - mongodb+srv://[UserName]:[password]@cluster0.dciqs.mongodb.net/myFirst
 </p>
 
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs?username=RenameBot&show_icons=true&locale=en&layout=compact&theme=chartreuse-dark" alt="ovi" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs?username=madushadhanushka&show_icons=true&locale=en&layout=compact&theme=chartreuse-dark" alt="ovi" />
