@@ -14,7 +14,7 @@ async def start(client, message):
     user = message.from_user
     if not await db.is_user_exist(user.id):
         await db.add_user(user.id)             
-    text=script.START_TXT.format(user.mention),
+    text=script.START_TXT.format(message.from_user.mention),
     button=InlineKeyboardMarkup([[
                 InlineKeyboardButton("⚔ ᴅᴇᴠs ⚔", callback_data='dev')                
                 ],[
