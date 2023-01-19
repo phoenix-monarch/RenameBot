@@ -4,5 +4,6 @@ hachoir
 pyrogram==2.0.35
 TgCrypto
 pymongo
-dnspython
+dnspython 
+motor
 aiohttp
