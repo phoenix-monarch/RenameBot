@@ -73,7 +73,7 @@ async def doc(bot,update):
          img = Image.open(ph_path)
          img.resize((320, 320))
          img.save(ph_path, "JPEG")
-     await ms.edit(script.TT_DOWN)
+     await ms.edit(script.TT_UP)
      c_time = time.time() 
      try:
         if type == "document":
@@ -83,7 +83,7 @@ async def doc(bot,update):
                     thumb=ph_path, 
                     caption=caption, 
                     progress=progress_for_pyrogram,
-                    progress_args=(script.TT_DOWN,  ms, c_time   ))
+                    progress_args=(script.TT_UP,  ms, c_time   ))
         elif type == "video": 
             await bot.send_video(
 		    update.message.chat.id,
@@ -92,7 +92,7 @@ async def doc(bot,update):
 		    thumb=ph_path,
 		    duration=duration,
 		    progress=progress_for_pyrogram,
-		    progress_args=(script.TT_DOWN,  ms, c_time))
+		    progress_args=(script.TT_UP,  ms, c_time))
         elif type == "audio": 
             await bot.send_audio(
 		    update.message.chat.id,
@@ -101,7 +101,7 @@ async def doc(bot,update):
 		    thumb=ph_path,
 		    duration=duration,
 		    progress=progress_for_pyrogram,
-		    progress_args=(script.TT_DOWN,  ms, c_time   )) 
+		    progress_args=(script.TT_UP,  ms, c_time   )) 
      except Exception as e: 
          await ms.edit(f" Erro {e}") 
          os.remove(file_path)
