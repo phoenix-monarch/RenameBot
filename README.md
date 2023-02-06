@@ -47,7 +47,7 @@ A File Rename Bot with Custom Thumbnail Support
 
 * START_IMG - Telegraph link [Eg:- https://telegra.ph/file/0e3738d56ff92e363a1d9.jpg]
 
-* FORCE_SUB - Channel ID
+* FORCE_SUB - Force sub channel username without @
 
 # HOW TO FILL -
 
